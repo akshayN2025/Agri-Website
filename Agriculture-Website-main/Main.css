@@ -1,0 +1,99 @@
+body{
+    background-color: #EEEEEE;
+}
+div.nav{
+    /* display: inline; */
+    float: right;
+    /* height: 55px;
+    width: 70%; */
+    border-radius: 10px;
+    background-color: white;
+}
+li {
+    display: inline;
+    margin: 20px;
+    font-size: 20px;
+    background-color:"#fffff";
+    
+  }
+  li a {
+    color:#2ACC32;
+    font-size: 26px;
+    border-color: black;
+    }
+    p a {
+        color:#2ACC32;
+        font-size: 35px;
+        border-color: black;
+        }
+div.tips{
+    font-size: 25px;
+    float: left;
+    padding: 50px;
+   
+}
+h1{
+    color:#218225;
+    margin-left: -30px;
+}
+div.All{
+    display: inline-flex;
+    max-width: 1500px;
+    width:100%;
+    max-height: 700px;
+    height: 70%;
+    overflow: auto;
+
+}
+img{
+    max-width: 1500px;
+    width:100%;
+    max-height: 700px;
+    height: 30%;
+}
+p.heading{
+    font-size: 30px;
+    margin-left: 10px;
+}
+p.texting{
+    max-width: 1500px;
+    width:100%;
+    max-height: 700px;
+    height: auto;
+    
+}
+
+.box{
+    max-width: 1500px;
+    width:100%;
+    max-height: 700px;
+    height: auto;
+    border: 1px solid black;
+    color:black;
+    border-radius: 15px;
+    margin: 20px;
+    background-color:#FFFF;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow:visible;
+    }
+div.def{
+        height: 300px;
+        background-color:#FFFF;
+        border-radius: 15px;
+        max-width: 1500px;
+        width:100%;
+        border: 1px solid black;
+        /* padding: -200px; */
+        margin: 10px;
+        overflow: auto;
+}
+h3{
+    color: #2ACC32;
+    font-size: 25px;
+    margin: 20px;
+}
+p.gf{
+    margin: 20px
+}

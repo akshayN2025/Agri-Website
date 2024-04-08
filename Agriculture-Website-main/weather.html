@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="agri.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="Calculator.html">Fertilizers Calculator</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="try.html">Cultivation Tips</a></li>
+            <!-- <li><a href="#">Prices</a></li> -->
+        </ul>
+        <div class="heading">
+            <h1 id="weather">Weather</h1>
+        </div>
+    </header>
+
+    <section class="main-body">
+        <div class="w-current">
+            <p id="search-city">Search City<input type="text" class="search" id="searchval"></p>
+            <button id="search">Search</button>
+            <h2 id="city">PUNE</h2>
+            <p id="p-degree"><span id="degree">45</span>°C</p>
+            <img src="images/Group 3724.png" class="cloud" id="conditionimg">
+            <h2 id="status">Cloudy</h2>
+        </div>
+
+        <div class="features">
+            <div class="box">
+                <div class="humi">
+                    <h1>Humidity</h1>
+                    <img src="images/humidity (2) 1.png" id="hum-img">
+                    <p id="amount"><span id="num" class="humid">37</span>%</p>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <class class="winds">
+                    <h1>Wind</h1>
+                    <img src="images/wind (1) 1.png" id="hum-img">
+                    <p id="amount"><span id="num" class="wind">37</span>km/hr</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="uvs">
+                    <h1>UV</h1>
+                    <img src="images/humidity (2) 1 (1).png" id="hum-img">
+                    <p id="amount"><span id="num" class="uv">37</span>/10</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="pre">
+                    <h1>Rain</h1>
+                    <img src="images/rainc.png" id="hum-img">
+                    <p id="amount"><span id="num" class="press">37</span>%</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="maxtemp">
+                    <h1>Max Temp</h1>
+                    <img src="images/humidity (2) 1 (2).png" id="hum-img">
+                    <p id="amount"><span id="num" class="max-temp">37</span>°C</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="mintemp">
+                    <h1>Min Temp</h1>
+                    <img src="images/min temp img.png" id="hum-img">
+                    <p id="amount"><span id="num" class="min-temp">37</span>°C</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="sunrise">
+                    <h1>SunRise</h1>
+                    <img src="images/humidity (2) 1 (3).png" id="hum-img">
+                    <p id="amount"><span id="num" class="rise">37</span>am</p>
+                </class>
+
+            </div>
+
+            <div class="box">
+                <class class="sunset">
+                    <h1>SunSet</h1>
+                    <img src="images/wind (1) 4.png" id="hum-img">
+                    <p id="amount"><span id="num" class="set">37</span>pm</p>
+                </class>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>

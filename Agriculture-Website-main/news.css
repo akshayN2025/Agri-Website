@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .navbar {
+  position: fixed;
+  top: 0px;
+  right: 19px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: -4px;
+  background: white;
+}
+
+.navbar a {
+  padding: 3px;
+  color: #404040;
+}
+
+.navbar a:hover {
+  color: rgb(33, 130, 37);
+  transition: .5s;
+}
+
+li {
+  margin: 20px;
+}
+
+.heading h1 {
+  margin-top: 120px;
+  text-align: center;
+  color: #218225;
+  font-size: 51.57px;
+}
+
+.box {
+  background-color: #EEEEEE;
+  height: 300px;
+  width: 197px;
+  border-radius: 12px;
+
+}
+
+.all {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  border-radius: 7px;
+  padding: 10%;
+}
+
+.box h3 {
+  text-align: center;
+  margin-top: -15px;
+  font-size: 20px;
+  padding-inline: 10%;
+
+}
+
+.box p {
+  display: block;
+  text-align: center;
+  font-size: small;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.para {
+
+  width: 100%;
+  height: 30%;
+  overflow-block: scroll;
+  padding-inline: 10%;
+
+}
+
+/* .box button{
+    background-color: #218225;
+    width: 40%;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+} */
+.btn {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn button {
+  border-radius: 4px;
+  color: white;
+  background-color: #218225;
+  padding-inline: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fertilizer Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+
+</head>
+<script>
+  function val() {
+    var a = parseFloat(document.getElementById("c-area").value);
+    var n = parseFloat(document.getElementById("n_area").value);
+    var ph = parseFloat(document.getElementById("phos").value);
+    var po = parseFloat(document.getElementById("pota").value);
+
+    var u = document.getElementById("ur");
+    var dap = document.getElementById("dap");
+    var mov = document.getElementById("mov");
+    var k = n - ((100 * ph) / 46) * 0.18;
+    u.value = parseInt(a * (100 * k) / 46);
+    dap.value = parseInt(a * (100 * ph) / 46);
+    mov.value = parseInt(a * (100 * po) / 60);
+  }
+</script>
+
+
+<body>
+  <header>
+    <ul class="navbar">
+      <li><a href="agri.html">Home</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li><a href="Calculator.html">Fertilizers Calculator</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="try.html">Cultivation Tips</a></li>
+      <!-- <li><a href="#">Prices</a></li> -->
+    </ul>
+  </header>
+
+  <h1 class="f-title" id="f-title">Fertilizers Calculator</h1>
+
+  <div class="f-class">
+    <div class="c-img">
+      <img src="images/fertilizer calculator.svg">
+    </div>
+
+    <div class="calci">
+      <p id="c-sarea">Select Area (*acer)<input type="text" placeholder="" id="c-area" value="1"></p>
+
+
+      <div class="nitrogen">
+        <p id="n1-sarea">Nitrogen (*kg)<input type="text" placeholder="" value="50" id="n_area" class="n-area"></p>
+        <p id="n2-sarea">Phosphrus(*kg)<input type="text" placeholder="" value="25" id="phos" class="n-area"></p>
+        <p id="n3-sarea">Potassium(*kg)<input type="text" placeholder="" value="12" id="pota" class="n-area"></p>
+      </div>
+
+      <a href="#" class="btn" id="calculate" onclick="val()">Calculate</a>
+
+      <div class="ans">
+        <p id="n4-sarea">Urea (*kg)<input type="text" placeholder="" id="ur" class="n-area"></p>
+        <p id="n5-sarea">DAP (*kg)<input type="text" placeholder="" id="dap" class="n-area"></p>
+        <p id="n6-sarea">MOP (*kg)<input type="text" placeholder="" id="mov" class="n-area"></p>
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+
+</body>
+<script src="fore.js"></script>
+
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --bg-color: #f6f5fa;
+    --text-color: #404040;
+    --hover-color: rgb(33, 130, 37);
+    --h3-font: 10rem;
+    --big-font: 3.5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+}
+
+header .navbar {
+    position: fixed;
+    top: 3px;
+    right: 19px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: -4px;
+    background: var(--bg-color);
+}
+
+.navbar a {
+    padding: 3px;
+    color: var(--text-color);
+}
+
+li {
+    margin: 20px;
+}
+
+h1#f-title {
+
+    color: var(--hover-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0% 5% 0%;
+}
+
+.f-class {
+    display: flex;
+}
+
+a.btn {
+    width: 40%;
+    /* height: 2rem; */
+    color: #f6f5fa;
+    /* margin: 0px 0px 8px 81px; */
+    display: flex;
+    justify-content: center;
+    height: 0px;
+    /* padding: 6px; */
+    border-radius: 4px;
+    background: var(--hover-color);
+    height: 2em;
+    margin: -103px 9px 33px 121px;
+    padding: 8px;
+}
+
+.calci {
+    position: absolute;
+    background-color: rgb(233, 244, 222);
+    width: 47%;
+    height: 55%;
+    margin: 0% 0% 0% 45%;
+    padding: 2%;
+}
+
+img {
+    width: 531px;
+    padding: 5%;
+}
+
+p#c-sarea {
+    display: inline-grid;
+    padding: 1x -3px 12px -94px;
+    margin-bottom: 10%;
+}
+
+input.c-area {
+    margin-top: 3%;
+    width: 100%;
+    padding: 2px;
+}
+
+.nitrogen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    border-color: green;
+}
+
+input.n-area {
+    width: 70%;
+
+    padding: 1x -3px 12px -94px;
+    margin-bottom: 70%;
+    margin-top: 9px;
+}
+
+input.phos {
+    width: 70%;
+    padding: 1x -3px 12px -94px;
+    margin-bottom: 70%;
+    margin-top: 9px;
+}
+
+input.pota {
+    width: 70%;
+    padding: 1x -3px 12px -94px;
+    margin-bottom: 70%;
+    margin-top: 9px;
+}
+
+.ans {
+    display: flex;
+}

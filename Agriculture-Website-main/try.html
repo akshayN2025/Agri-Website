@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivation Tips</title>
+    <link rel="stylesheet" href="try.css">
+
+    </link>
+</head>
+
+<body>
+
+    <div class="curve">
+        <ul>
+            <h5>
+                <li><a href="agri.html">Home</a></li>
+                
+            </h5>
+        </ul>
+    </div>
+
+    <h2>Cultivation Tips</h2>
+    <form name="dropForm">
+        <div class=" drop">
+            <label for="a">
+                <select name="dropSelect" onClick="displayContent()" onClick="displayCO()" id="selection" onchange="showDropInfo()" >
+                    <option disabled selected>Select Crops</option>
+                    <option value="a">Wheat</option>
+                    <option value="b">Rice</option>
+                    <option value="c">Jowar</option>
+                    <option value="d">Turmeric</option>
+                    <option value="e">Potatoes</option>
+                </select>
+            </label>
+        </div>
+        <h1 id="pT">
+            </h1id>
+        </h1>
+    </form>
+    <script>
+        function showDropInfo() {
+            var sT = dropForm.dropSelect;
+            var pT = document.getElementById('pT');
+            pT.innerHTML = (sT[sT.selectedIndex].text);
+        }
+        function displayContent() {
+    var selectedOption = document.getElementById("selection").value;
+
+    if (selectedOption == "a") {
+
+        document.getElementById("Common1").setAttribute("href","Wheat.html")
+        document.getElementById("Common2").setAttribute("href","Wheat.html")
+        document.getElementById("Common3").setAttribute("href","Wheat.html")
+        document.getElementById("Common4").setAttribute("href","Wheat.html")
+        document.getElementById("Common5").setAttribute("href","Wheat.html")
+
+    } else if (selectedOption == "b") {
+
+        document.getElementById("Common1").setAttribute("href","Rice.html")
+        document.getElementById("Common2").setAttribute("href","Rice.html")
+        document.getElementById("Common3").setAttribute("href","Rice.html")
+        document.getElementById("Common4").setAttribute("href","Rice.html")
+        document.getElementById("Common5").setAttribute("href","Rice.html")
+    } else if (selectedOption == "c") {
+
+        document.getElementById("Common1").setAttribute("href","Jowar.html")
+        document.getElementById("Common2").setAttribute("href","Jowar.html")
+        document.getElementById("Common3").setAttribute("href","Jowar.html")
+        document.getElementById("Common4").setAttribute("href","Jowar.html")
+        document.getElementById("Common5").setAttribute("href","Jowar.html")
+    } else if (selectedOption == "d") {
+
+        document.getElementById("Common1").setAttribute("href","Turmeric.html")
+        document.getElementById("Common2").setAttribute("href","Turmeric.html")
+        document.getElementById("Common3").setAttribute("href","Turmeric.html")
+        document.getElementById("Common4").setAttribute("href","Turmeric.html")
+        document.getElementById("Common5").setAttribute("href","Turmeric.html")
+    }
+    else if (selectedOption == "e") {
+
+        document.getElementById("Common1").setAttribute("href","Potatoes.html")
+        document.getElementById("Common2").setAttribute("href","Potatoes.html")
+        document.getElementById("Common3").setAttribute("href","Potatoes.html")
+        document.getElementById("Common4").setAttribute("href","Potatoes.html")
+        document.getElementById("Common5").setAttribute("href","Potatoes.html")
+    }
+}
+
+    </script>
+
+    <div class="All">
+        <div class="box">
+
+            <p class="heading"> <a id="Common1">Soil Preparation</a>  </p>
+            <img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/01/23123116/SeedDrill-300x199.jpg"
+                alt="Soil Preparation" width="300px" height="150px">
+            <p class="texting">We are known for our ability to handle every last detail of our customers supply chain
+                needs.Dawndeal takes care of all your logistics.</p>
+        </div>
+        <div class="box">
+            <p class="heading"><a id="Common2">Sowing</a></p>
+            <img src="https://www.gardeningknowhow.com/wp-content/uploads/2017/08/sow-thinly.jpg" alt="Sowing"
+                width="300px" height="150px">
+            <p class="texting">We offer direct full-load or part-load haulage to any location and from any
+                location in Nigeria.</p>
+        </div>
+        <div class="box">
+            <p class="heading"><a id="Common3">Harvesting</a></p>
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-190874,resizemode-1,msid-94770895/news/economy/agriculture/september-deluge-stalls-kharif-harvesting-damages-crops.jpg"
+                alt="Harvesting" width="300px" height="150px">
+            <p class="texting">Our Strategy is offering best-fit- sourcing and export solution by closely working with
+                the market we serve.</p>
+        </div>
+        <div class="box">
+            <p class="heading"><a id="Common4">Irrigation</a></p>
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-1173290,resizemode-1,msid-80628252/news/economy/agriculture/budget-gives-push-to-micro-irrigation-sector.jpg"
+                alt="Irrigation" width="300px" height="150px">
+            <p class="texting">We build resourceful partnerships agile enough to move with you, whether you’re an
+                international corporation or a small startup.</p>
+        </div>
+        <div class="box">
+            <p class="heading"><a id="Common5">Storage</a></p>
+            <img src="https://i.ndtvimg.com/i/2015-03/food-storage-facility_650x400_51427044779.jpg" alt="Storage"
+                width="300px" height="150px">
+            <p class="texting">Proper storage space has to be arranged. Inadequate storage space and improper storage
+                methods can lead to a huge grain loss.</p>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
